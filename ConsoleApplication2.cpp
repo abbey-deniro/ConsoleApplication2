@@ -13,7 +13,7 @@ int main()
     unsigned short daysWorked;
     unsigned short hoursWorkedPerDay[7];
 
-    const float tax = 0.1f;
+    const float TAX = 0.1f;
 
     cout << "enter your name:";
     cin >> name;
@@ -38,7 +38,7 @@ int main()
     for (int i = 0; i < daysWorked; i++) totalHours += hoursWorkedPerDay[i];
 
     float gross = totalHours * wage;
-    float net = gross - (gross * tax);
+    float net = gross - (gross * TAX);
 
     cout << name << "worked" << totalHours << " hours at $" << wage << " an hour.";
     cout << "gross income: $" << gross << endl;
